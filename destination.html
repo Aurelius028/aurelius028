@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Destinations</title>
+  <style>
+      
+    /* Global Styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('palawan.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Navigation Bar Styles */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 10px 20px;
+      float: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s;
+      
+    }
+
+    .navbar a:hover {
+      color: #f0f0f0;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar .menu {
+      display: flex;
+    }
+
+    /* Section Styles */
+    .destination-section {
+      width: 100%;
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .destination-grid {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .destination-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .destination-grid::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+    }
+
+    .destination {
+      position: relative;
+      width: 280px;
+      height: 300px;
+      flex: 0 0 auto;
+      border-radius: 15px;
+      padding-top: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      scroll-snap-align: start;
+    }
+
+    .destination img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .destination-btn {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      color: black;
+      padding: 6px 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .destination-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .bck-bttn {
+      margin-top: 30px;
+    }
+
+    .back-bttn {
+      width: 120px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .back-bttn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .navbar a {
+        font-size: 0.9rem;
+        margin: 0 10px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .destination {
+        width: 220px;
+        height: 260px;
+      }
+
+      .destination img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar a {
+        font-size: 0.8rem;
+        margin: 0 8px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .destination {
+        width: 200px;
+        height: 240px;
+      }
+
+      .destination img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo"></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Destination Section -->
+  <div class="destination-section">
+    <h1>Top Destinations</h1>
+    <div class="destination-grid">
+      <div class="destination">
+        <img src="tabon.jpg" alt="Tabon Cave">
+        <button class="destination-btn"><a href="tabon.html" target="_self">TABON CAVE</a></button>
+      </div>
+      <div class="destination">
+        <img src="elnido.jpg" alt="El Nido">
+        <button class="destination-btn"><a href="elnido.html" target="_self">EL NIDO</a></button>
+      </div>
+      <div class="destination">
+        <img src="coron.jpg" alt="Coron">
+        <button class="destination-btn"><a href="coron.html" target="_self">CORON</a></button>
+      </div>
+      <div class="destination">
+        <img src="tubbataha.jpg" alt="Tubbataha">
+        <button class="destination-btn"><a href="tubbataha.html" target="_self">TUBBATAHA</a></button>
+      </div>
+      <div class="destination">
+        <img src="underground.jpg" alt="Underground">
+        <button class="destination-btn"><a href="underground.html" target="_self">UNDERGROUND RIVER</a></button>
+      </div>
+    </div>
+    <div class="bck-bttn">
+      <button class="back-bttn"><a href="index.html" target="_self">Back</a></button>
+    </div>
+  </div>
+</body>
+</html>

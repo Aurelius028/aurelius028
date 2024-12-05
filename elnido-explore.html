@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nido Explore</title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src="elnidov.mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1>Historical and Archaeological Exploration</h1>
+        <ul>
+            <h2> Oldest Rock Formations and Fossils </h2>
+            <div class="image-container">
+                <img src="rockformation.jpg" alt="Rock formation">
+            </div>
+            
+            <li>According Dr. Alan Fernando, a paleontologist from the University of the Philippines, El Nido has probably the oldest rock formations and fossils in the Philippines. The oldest rock, called by the scientific community as “Bacuit” rock is 270 million years old. 
+            </li>
+            
+            <li>These rock formations are presently located in Dolarog and Bucana area. The second oldest, called “Minilog” by geologists, is 250 million years old.
+            </li>
+            
+            <li> Permian fossils, which existed between 252 million to 299 million years ago, are present in some rock formations in El Nido. They can be found in Matinloc Is., Shimizu Is., Diribungan Cave and Ille Cave. These fossils are abundant in Ille Cave and Diribungan Cave. 
+            </li>
+            
+        </ul>
+
+        <ul>
+            <h2>Pre-History</h2>
+            <div class="image-container">
+                <img src="pantera.jpeg" alt="Pantera">
+            </div>
+            <li> Humans already inhabited Dewil Valley in the terminal Pleistocene period. There are traces of human activities in 14,000 BP (Years Before Present).
+            </li>
+            
+            <li> The inhabitants that time use stone tools that they collect from Sibaltan.
+            </li>
+            <li> Scientists also discovered metatarsal bones of Pantera Tigris, the species of modern-day Asian tiger.
+            </li>
+            
+        </ul>
+
+        <ul>
+            <h2>Trading Community</h2>
+            <div class="image-container">
+                <img src="dynasty.jpeg" alt="Dynasty">
+            </div>
+            <li> During the 5th century AD, a trading community began to flourish in Sibaltan. They practice agriculture, trade and has a form of government. Scientists identified Tang Dynasty and Ming Dynasty jars unearthed in the area. They excavated human remains and postholes. The trading community is believed to begin declining in the 15th century.
+            </li>            
+        </ul>
+    </div>
+
+    
+   
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2>Island Hopping</h2>
+            <div class="image-container2">
+                <img src="island.jpeg" alt="Hopping">
+                <p>Explore the famous lagoons, beaches, and caves through pre-designed tours (Tour A, B, C, and D). Highlights include Big Lagoon, Secret Lagoon, Shimizu Island, and Matinloc Shrine.
+                </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2>Kayaking</h2>
+            <div class="image-container2">
+                <img src="kayaking.jpeg" alt="Kayaking">
+                <p> Renting a kayak allows you to explore these natural wonders at your own pace, weaving through towering limestone cliffs, hidden coves, and lush greenery.
+                </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2>Snorkeling and Diving</h2>
+            <div class="image-container2">
+                <img src="snorkling.jpeg" alt="Snorkeling">
+                <p> Dive into the vibrant underwater world of El Nido, where the marine life and coral reefs are as diverse as they are stunning.
+                </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2>Hiking To Taraw Cliff</h2>
+            <div class="image-container2">
+                <img src="hiking.jpeg" alt="Hikding">
+                <p> Embark on an exhilarating hike up the towering limestone cliffs of El Nido’s Taraw Cliff for an awe-inspiring, panoramic view of El Nido town and the breathtaking Bacuit Bay.
+                </p>
+            </div>
+        </ul>
+        
+        <ul>
+            <h2>Caving Adventures</h2>
+            <div class="image-container2">
+                <img src="caving.jpeg" alt="Caving">
+                <p> Embark on an unforgettable adventure through El Nido’s remarkable limestone caves, such as Cudugnon Cave and Cathedral Cave. These caves, offer a rare glimpse into the natural beauty and hidden wonders of Palawan.
+                </p>
+            </div>
+        </ul>
+        
+        <ul>
+            <h2>Cultural and Culinary Experiences</h2>
+            <div class="image-container2">
+                <img src="food.jpeg" alt="Food">
+                <p> Immerse yourself in the authentic culture of El Nido by interacting with the friendly locals and visiting traditional fishing villages that dot the coastline.
+                </p>
+            </div>
+        </ul>
+
+        <button class="discover-btn">
+            <a href="destination.html" target="_self">Back</a>
+        </button>
+        
+    </div>
+</div>
+
+</body>
+</html>
+
+ 
+             
+           
+

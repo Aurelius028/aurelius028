@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coron Explore </title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src="coronv.mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1> Historical and Archaeological Exploration </h1>
+        <ul>
+            <h2> World War II Shipwrecks </h2>
+            <div class="image-container">
+                <img src="shipwreck.jpeg " alt="Shipwreck ">
+            </div>
+            
+            <li> Coron is renowned for its underwater heritage, particularly the remains of Japanese warships sunk during an air raid by the American Navy on September 24, 1944. 
+            </li>          
+            <li> Popular wreck sites include the Irako Maru (a refrigeration ship), Okikawa Maru (an oil tanker), Akitsushima (a seaplane tender), and other vessels like the Olympia Maru and Lusong Gunboat.
+            </li>          
+            <li> These sites serve as historical artifacts and are now major attractions for divers. 
+            </li>
+        </ul>
+
+        <ul>
+            <h2> Barracuda Lake </h2>
+            <div class="image-container">
+                <img src="barracuda.jpg" alt="Barracuda">
+            </div>
+            
+            <li> Known for its unique thermocline effect, Barracuda Lake not only offers fascinating natural wonders but also holds historical significance, with its formation and ecosystem reflecting the geological history of the area. </li>
+            
+            
+        </ul>
+
+        <ul>
+            <h2> the Indigenous Tribes </h2>
+            <div class="image-container">
+                <img src="tagbanua.jpg" alt="Tagbanua">
+            </div>
+            <li>  The Tagbanua have a rich, spiritual connection with their environment, honoring ancient customs, particularly in relation to the sea and forest, which are seen as sacred domains. For the Tagbanwa, the sea is a source of life and a realm of spirits—an understanding that has shaped much of Coron’s early history.
+            </li>
+            
+        </ul>
+    </div>
+
+   
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2> Scuba Diving </h2>
+            <div class="image-container2">
+                <img src="corondiving.jpeg" alt="Diving ">
+                <p> Dive into history by exploring the world-famous WWII shipwrecks off Coron’s coast, such as the Irako Maru, a former refrigeration ship, and the Akitsushima, a Japanese seaplane tender. These wrecks are ideal for advanced divers, offering a thrilling underwater adventure filled with haunting remnants of wartime machinery, vibrant coral growth, and diverse marine life. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Snorkeling </h2>
+            <div class="image-container2">
+                <img src="coronsnorkeling.jpeg " alt="Snorkeling ">
+                <p> <strong>Snorkel at Skeleton Wreck</strong> Dive into adventure at the Skeleton Wreck, a sunken Japanese ship from World War II that now serves as a thriving artificial reef. Snorkel or dive to explore the coral-covered remains of the ship, teeming with colorful marine life, making it a favorite spot for underwater photography and marine exploration. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Swimming in Unique Lakes </h2>
+            <div class="image-container2">
+                <img src="kayangan.jpg" alt="Kayangan">
+                <p><strong> Kayangan Lake</strong> Widely regarded as one of the cleanest lakes in Asia, Kayangan Lake boasts crystal-clear turquoise waters surrounded by dramatic limestone cliffs and lush greenery. It offers unparalleled visibility, making it a favorite for swimming, snorkeling, and taking postcard-worthy photos. The short hike to the lake rewards visitors with a stunning viewpoint of the iconic Coron landscape.</p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Wildlife and Nature Exploration </h2>
+            <div class="image-container2">
+                <img src="tapyas.jpg" alt="Tapyas ">
+                <p>  Embark on a rewarding hike to Mt. Tapyas, a 210-meter-high summit offering breathtaking panoramic views of Coron Town, lush greenery, and the shimmering waters of the surrounding islands. The journey involves climbing over 700 steps, but the effort is worth it as you're greeted by the iconic Mt. </p>
+            </div>
+        </ul>
+        
+        <ul>
+            <h2> Photography and Scenic Views </h2>
+            <div class="image-container2">
+                <img src="photo.jpg" alt="Lake">
+                <p> Experience unparalleled beauty at the Kayangan View Deck, where you'll be greeted with panoramic vistas of turquoise waters and limestone cliffs—perfect for postcard-worthy shots. Hike to the summit of Mt. Tapyas, where a giant cross and a viewing deck offer sweeping views of Coron Town, neighboring islands, and the serene expanse of Bacuit Bay. </p>
+            </div>
+        </ul>
+        
+        <button class="discover-btn">
+            <a href="destination.html" target="_self">Back</a>
+        </button>
+        
+    </div>
+</div>
+
+</body>
+</html>
+
+ 
+             
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

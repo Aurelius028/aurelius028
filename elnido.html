@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabon Cave</title>
+  <style>
+      
+      
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('elnido.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .elnido-section {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .content-container {
+      max-width: 1000px;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .explore-btn, .back-btn {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+
+    .back-btn{
+        float: right;
+    }
+    
+    .explore-btn{
+        float: left;
+    }
+
+    .explore-btn:hover, .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .explore-btn, .back-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+
+      .content-container {
+        flex-direction: column;
+      }
+
+      .text-container {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .explore-btn, .back-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="elnido-section">
+    <div class="content-container">
+      <div class="image-container">
+        <img src="elnido2.jpg" alt="El Nido">
+      </div>
+      <div class="text-container">
+        <h1>EL NIDO</h1>
+        <p>
+           EI Nido, located in the northern part of Palawan, is a breathtaking destination renowned for its towering limestone cliffs, turquoise lagoons, pristine beaches, and vibrant coral reefs. It serves as a gateway to the "Bacuit Archipelago", a cluster of stunning islands and hidden coves perfect for island-hopping adventures,
+        </p>
+        <p>
+          Popular spots include “Big-agoon, Small-Lagoon, Secret Beach, and Nacpan Beach EI Nido is a haven for snorkeling, kayaking, and diving, offering incredible marine biodiversity and crystal-clear waters. Known for its laid-back atmosphere, it's also home to eco friendly resorts, beach front restaurants, and captivating Back sunsets, making it a paradise for nature lovers and adventurers alike.
+        </p>
+        <button class="back-btn">
+          <a href="destination.html" target="_self">Back</a>
+        </button>
+        <button class="explore-btn">
+          <a href="elnido-explore.html" target="_self">Explore</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
