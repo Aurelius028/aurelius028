@@ -67,11 +67,13 @@
     .destination-section {
       width: 100%;
       min-height: 100vh;
+      height: 500px;
       color: white;
       text-align: center;
       padding: 50px 20px;
       box-sizing: border-box;
       background: rgba(0, 0, 0, 0.5);
+      position: fixed;
     }
 
     h1 {
@@ -85,6 +87,7 @@
       overflow-x: auto;
       padding-bottom: 20px;
       scroll-snap-type: x mandatory;
+      margin: 10px;
     }
 
     .destination-grid::-webkit-scrollbar {
@@ -100,6 +103,8 @@
       position: relative;
       width: 280px;
       height: 300px;
+      margin-top: 20px;
+      margin-left: 20px;
       flex: 0 0 auto;
       border-radius: 15px;
       padding-top: 20px;
@@ -109,6 +114,13 @@
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.3);
       scroll-snap-align: start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+      transform-origin: center center;
+    }
+
+     .destination:hover{
+      transform: scale(1.08);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
     }
 
     .destination img {
