@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 0.9rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+            
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src="tubbatahav.mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1> Biodiversity Exploration </h1>
+        <ul>
+            <h2> Marine Sanctuary </h2>
+            <div class="image-container">
+                <img src="sanctuaryT.jpg" alt="Sanctuary">
+            </div>
+            
+            <li> Tubbataha Reefs Natural Park is a globally recognized marine sanctuary, teeming with extraordinary biodiversity. </li>      
+                  <br>    
+            <li> It is home to over 600 species of fish, 350 species of coral, 11 species of sharks, 13 species of dolphins and whales, and 2 species of sea turtles, including the endangered hawksbill and green turtles. </li>    <br>
+            <li> This UNESCO World Heritage Site is celebrated as one of the richest and most pristine marine ecosystems in the world, serving as a vital habitat for countless marine species and a critical breeding ground for many. </li>
+        </ul>
+
+        <ul>
+            <h2> Remote Location </h2>
+            <div class="image-container">
+                <img src="remoteT.jpeg" alt="Remote Location">
+            </div>
+            <li> Accessible exclusively by liveaboard boats, Tubbataha Reefs Natural Park welcomes visitors during its diving season, which runs from mid-March to mid-June.  </li>
+               <br>
+            <li> This period is considered the optimal time for diving due to calm seas, warm weather, and exceptional underwater visibility, often exceeding 30 meters. </li>
+               <br>
+            <li> These ideal conditions offer divers an unparalleled opportunity to explore the park's thriving coral reefs, vibrant marine life, and breathtaking underwater landscapes. </li>
+               <br> 
+        </ul>
+
+        <ul>
+            <h2> Marine Conservarion </h2>
+            <div class="image-container">
+                <img src="conservationT.jpeg " alt="Conservation">
+            </div>
+            <li> The Tubbataha Reefs Natural Park is a strictly protected UNESCO World Heritage Site within the Coral Triangle, known as the global center of marine biodiversity. </li>
+               <br>
+            <li> The park emphasizes sustainable tourism practices to safeguard its delicate ecosystems. </li>
+               <br>
+            <li> Visitors are required to obtain permits well in advance and must adhere to strict park regulations, which include no fishing, no littering, and no touching or collecting marine life. These rules are in place to ensure minimal human impact and the preservation of this pristine marine environment for future generations. </li>
+               <br>
+        </ul>
+
+    </div>
+
+   
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2> Scuba Diving </h2>
+            <div class="image-container2">
+                <img src="divingT.jpg " alt="Diving">
+                <p> Delve into the mesmerizing underwater world of Tubbataha Reefs Natural Park, where vibrant coral walls rise and fall alongside dramatic underwater plateaus and steep drop-offs. These formations are alive with diverse marine life, including elusive manta rays gracefully gliding through the waters, majestic whale sharks, and gentle sea turtles. Renowned as one of the world's premier diving destinations, Tubbataha offers unparalleled visibility and a kaleidoscope of biodiversity, making every dive an unforgettable adventure into nature’s underwater masterpiece.
+                </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Snorkeling </h2>
+            <div class="image-container2">
+                <img src="snorkelingT.jpg " alt="Snorkeling">
+                <p> Snorkeling in Tubbataha Reef offers an unforgettable experience of exploring one of the world’s most biodiverse marine ecosystems. The reef’s crystal-clear waters provide exceptional visibility, often exceeding 30 meters, allowing snorkelers to immerse themselves in vibrant coral gardens and observe the abundant marine life just below the surface. As you float along the shallow coral gardens, you’ll be surrounded by schools of tropical fish, including butterflyfish, angelfish, and parrotfish. The waters also host larger marine creatures like sea turtles, reef sharks, and rays. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Underwater Photography </h2>
+            <div class="image-container2">
+                <img src="photographyT.jpg" alt="Photography">
+                <p> Underwater photography in Tubbataha Reef presents an incredible opportunity to capture the stunning biodiversity of one of the world’s most pristine marine environments. With its exceptional visibility, often reaching depths of up to 30 meters or more, the reef offers photographers the chance to document vibrant coral walls, thriving fish species, and graceful marine creatures like sea turtles, manta rays, and whale sharks. The clarity of the water, combined with the vibrant colors of the coral gardens, provides photographers with ideal conditions for capturing sharp, vivid images. </p>
+            </div>
+        </ul>
+
+        
+        <ul>
+            <h2> Liveaboard Experience </h2>
+            <div class="image-container2">
+                <img src="liveaboardT.jpeg" alt=" ">
+                <p> Aside from diving, liveaboard trips provide time for relaxation on the boat, enjoying the breathtaking views of the reef and the surrounding Sulu Sea. The remote nature of Tubbataha allows for a sense of exclusivity, with limited access to the area ensuring that only a small number of people experience its beauty each year. Liveaboard expeditions are strictly regulated to maintain the health of the reef, with operators adhering to sustainable tourism practices. Permits must be secured in advance, and visitors are encouraged to follow the park's guidelines to preserve this fragile and biodiverse ecosystem.  </p>
+            </div>
+        </ul>
+        
+        <ul>
+            <h2> Marine Education </h2>
+            <div class="image-container2">
+                <img src="educationT.jpeg" alt="Education ">
+                <p> During liveaboard trips in Tubbataha Reef, visitors have the exceptional opportunity to immerse themselves in the reef's ecological wonders, guided by experienced onboard experts such as marine biologists and conservationists. These knowledgeable guides provide insightful briefings and talks, sharing valuable information about the delicate ecosystems of the reef and the ongoing conservation efforts in place to protect this UNESCO World Heritage site. 
+                As you sail through the crystal-clear waters of Tubbataha, the guides take you through the reef's intricate biodiversity, explaining how its vibrant coral walls, diverse marine life, and unique geological formations contribute to one of the most ecologically significant marine environments on the planet. They explain the challenges faced by the reef, from overfishing to climate change, and the measures in place to ensure its preservation. </p>
+            </div>
+        </ul>
+
+        <button class="discover-btn">
+            <a href="destination.html" target="_self">Back</a>
+        </button>
+        
+    </div>
+</div>
+
+</body>
+</html>
