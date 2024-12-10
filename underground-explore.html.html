@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underground River Explore</title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 1rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src=".mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1> Biodiversity Exploration </h1>
+        <ul>
+            <h2> Rich Biodiversity Hotspot </h2>
+            <div class="image-container">
+                <img src="peacock.jpg" alt="striking Palawan peacock-pheasant ">
+            </div>
+            <li> The Puerto Princesa Subterranean River National Park boasts a unique "mountain-to-sea" ecosystem, where lush forests seamlessly transition into coastal waters, creating a haven for a diverse range of flora and fauna.</li>
+            <br>
+            <li> This ecological treasure is home to several endangered species, including the striking Palawan peacock-pheasant with its iridescent plumage, the impressive monitor lizards often seen basking near the riverbanks, and the elusive Philippine forest turtle, a rare species that highlights the park's critical role in conservation. </li>
+            <br>
+            <li> This rich biodiversity underlines the park's importance as a sanctuary for both terrestrial and aquatic life. </li>
+        </ul>
+
+        <ul>
+            <h2> Unique Cave Ecosystem </h2>
+            <div class="image-container">
+                <img src="undergroundcave.jpg" alt="underground cave ">
+            </div>
+            <li> Within the intricate cave system of the Puerto Princesa Underground River, researchers have documented a variety of unique species that sustain its delicate ecosystem.  </li>
+            <br>
+            <li> Bats roost in the cave's ceilings, playing a vital role in nutrient cycling through their guano, which supports microbial life. Swiftlets, known for their remarkable ability to navigate in darkness using echolocation, contribute by building nests that have cultural and ecological significance. Insects, including specialized cave-dwelling species, further balance the ecosystem by decomposing organic matter and serving as prey for other organisms. </li>
+            <br>
+            <li> This interplay of life forms highlights the cave's ecological harmony and its importance in biodiversity conservation. </li>   
+        </ul>
+
+        <ul>
+            <h2> UNESCO World Heritage Site </h2>
+            <div class="image-container">
+                <img src="unesco.jpeg" alt="unesco ">
+            </div>
+            <li> Celebrated for its outstanding universal value, the Puerto Princesa Subterranean River National Park plays a pivotal role in global biodiversity conservation.  </li>
+            <br>
+            <li>  Its unique ecosystems, from lush tropical forests to its underground river and karst landscapes, harbor a wealth of flora and fauna, many of which are endemic or endangered.  </li>
+            <br>
+            <li> The site's ecological significance has garnered international acclaim, earning it a designation as a UNESCO World Heritage Site and a New7Wonders of Nature. This recognition underscores its vital importance in preserving Earth's natural heritage for future generations. </li>
+        </ul>
+    </div>
+
+    
+    
+    
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2> Underground River Tour </h2>
+            <div class="image-container2">
+                <img src="tour.jpg" alt="tour ">
+                <p> Embark on an enchanting paddle boat journey through the Puerto Princesa Underground River, where nature's artistry comes alive. Glide through the dark, mystical waters of this UNESCO World Heritage Site and marvel at dramatic limestone formations shaped over millennia. Towering stalactites and stalagmites create a breathtaking subterranean landscape, while your guide shares fascinating insights about the cave's geology, history, and ecosystem. The 45-60 minute adventure immerses you in an otherworldly environment, illuminated by the soft glow of lanterns, making it an unforgettable exploration of one of nature’s greatest wonders. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Mangrove Forest Paddle Tour </h2>
+            <div class="image-container2">
+                <img src="mangrove.jpeg" alt="mangrove ">
+                <p> Enhance your Puerto Princesa experience by exploring the vibrant mangrove forests that surround the underground river. These eco-tours allow you to immerse yourself in the lush greenery while learning about the vital role mangroves play in coastal ecosystems. As you navigate through the serene waterways, keep an eye out for fascinating wildlife such as monitor lizards basking in the sun, colorful exotic birds perched in the trees, and various fish species swimming below. Guided by locals, these tours often include insights into traditional uses of mangroves and their significance in protecting biodiversity, making it a captivating and educational adventure. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Jungle Trekking </h2>
+            <div class="image-container2">
+                <img src="jungletrail.jpg" alt="jungle trail ">
+                <p> Embark on a short trek through the dense jungle of Puerto Princesa Subterranean River National Park to reach the underground river, immersing yourself in its lush, vibrant ecosystem. The trail offers the chance to witness the park’s rich biodiversity, with sightings of native wildlife like monkeys, monitor lizards, and exotic birds among towering trees and unique plants. Alternatively, explore nearby trails that showcase the park’s remarkable “mountain-to-sea” ecosystem, where coastal mangroves transition into dense forests and limestone karsts. These walks are a wonderful way to connect with nature while gaining a deeper appreciation for the park's ecological significance. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Wildlife Spotting </h2>
+            <div class="image-container2">
+                <img src="monkey.jpeg" alt="monkey ">
+                <p> Keep an eye out for rare and endemic species, such as the Palawan hornbill with its striking call, the elusive and colorful Palawan peacock-pheasant, and the critically endangered Philippine forest turtle. The Puerto Princesa Subterranean River National Park serves as a haven for these unique creatures, showcasing the exceptional biodiversity of Palawan. These sightings highlight the park's importance as a sanctuary for preserving threatened wildlife while offering a captivating experience for nature enthusiasts. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Beach Time at Sabang </h2>
+            <div class="image-container2">
+                <img src=" sabang.jpeg" alt="sabang beach ">
+                <p> Unwind at Sabang Beach, a serene and beautiful coastal retreat located near the Puerto Princesa Subterranean River National Park. This idyllic stretch of golden sand is ideal for relaxing, taking a dip in the clear waters, or simply soaking up the sun. After a refreshing swim, savor the local seafood delicacies offered at nearby beachside restaurants, where you can enjoy freshly caught fish and other regional dishes. With its tranquil atmosphere, Sabang Beach provides the perfect complement to the adventure-filled underground river tour, offering visitors a chance to relax and immerse themselves in the natural beauty of the area. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Cultural and Educational Tours </h2>
+            <div class="image-container2">
+                <img src="educational.jpg" alt="educational">
+                <p> Gain a deeper understanding of the park's rich biodiversity and ongoing conservation efforts through interactive exhibits and informative displays available at the visitor centers. Knowledgeable guides and park staff provide valuable insights into the park's unique ecosystems, highlighting the importance of protecting its diverse flora and fauna. Explore engaging presentations on the park's endangered species, its role in global ecological conservation, and sustainable tourism practices that help preserve this UNESCO World Heritage Site. This educational experience not only enhances your visit but also deepens your appreciation for the critical environmental work being done in the Puerto Princesa Subterranean River National Park. </p>
+            </div>
+        </ul>
+
+        <button class="discover-btn">
+            <a href="destination.html" target="_self">Back</a>
+        </button>
+        
+    </div>
+</div>
+
+</body>
+</html>
