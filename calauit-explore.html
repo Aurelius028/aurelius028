@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calauit Island Explore </title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 1rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src="calauitv.mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1> Biodiversity Exploration </h1>
+        <ul>
+            <h2> African Wildlife on Calauit Island </h2>
+            <div class="image-container">
+                <img src=" " alt=" ">
+            </div>
+            <li>In the 1970s, <strong>Calauit Island</strong>in Palawan became home to a safari park that aimed to introduce and protect African wildlife in a tropical environment. These species have since adapted well to the island, contributing to its unique biodiversity. Here are some of the key animals:</li>
+            <ul>
+               <br>
+            <li> <strong>Giraffes:</strong> The Reticulated giraffes are the most prominent attraction. They are the star species of the safari park, with their distinctive net-like patterns and long necks, making them a popular sight for visitors. </li>
+               <br>
+            <li>,<strong>Zebras: </strong> Several varieties of zebras, including Grevy's zebras, roam Calauit Island. Their black-and-white stripes make them stand out against the island's green landscape, and they have adapted to the park's habitat well. </li>
+               <br>
+            <li> <strong>Antelopes:</strong> Different species of antelope can be found on the island, including the waterbuck, impala, and eland. These species have been able to thrive in the relatively unspoiled environment of Calauit Island, where they can graze and live freely within the park’s protective boundaries. </li>
+               <br>
+            <li> <strong> African Bushbucks: </strong> The African bushbuck is another key species introduced to Calauit Island. This medium-sized antelope is known for its elusive nature, often found in the dense forested areas of the park. </li>
+               <br>
+            </ul>
+        </ul>
+
+        <ul>
+            <h2> Native Palawan Wildlife on Calauit Island </h2>
+            <div class="image-container">
+                <img src=" " alt=" ">
+            </div>
+            
+            <li> In addition to the African wildlife introduced to the island, Calauit Island also serves as a sanctuary for several endemic species that are native to Palawan. These species are an essential part of the island's unique ecological balance. Here are some notable native species: </li>
+               <br>
+            <ul>
+            <li> <strong>Palawan Bearcat (Binturong): </strong> The Palawan bearcat, or binturong, is a nocturnal mammal found in the dense forests of Palawan. This large, tree-dwelling carnivore is known for its distinct appearance, with a long prehensile tail and shaggy fur. It's also noted for its scent, which resembles buttered popcorn due to the secretion of its scent glands. </li>
+               <br>
+            <li> <strong>Calamian Deer: </strong> The Calamian deer is a critically endangered species found only in the Calamian Islands of Palawan, including Calauit Island. Known for its delicate features and graceful movements, this deer faces the threat of habitat loss and hunting, making its conservation vital. </li>
+               <br>
+            <li> <strong>Palawan Porcupine </strong> The Palawan porcupine is another unique species native to the island. Known for its sharp spines that act as a defense mechanism against predators, this nocturnal rodent is an important part of Palawan's forest ecosystems. The porcupine spends much of its time foraging for fruits and roots in the island's dense woodlands. </li>
+               <br>
+            <li> <strong>Philippine Deer: </strong> The Philippine deer is indigenous to the region and is often found in the wild areas of Palawan. This medium-sized deer species is important for maintaining the balance of the island's ecosystem, as it helps in the regeneration of plant life by feeding on a variety of shrubs and grasses. </li>
+               <br>  
+            </ul>
+        </ul>
+
+        <ul>
+            <h2> Conservation Efforts </h2>
+            <div class="image-container">
+                <img src=" " alt=" ">
+            </div>
+            <li> The biodiversity of Calauit Island is managed through strict conservation policies to ensure the protection of both the introduced African wildlife and the native species. The park is actively involved in species conservation, research, and community engagement to maintain the ecological balance.
+               <br><br>
+                 By balancing the needs of the introduced African wildlife and preserving the native flora and fauna, Calauit Island serves as a key model for conservation efforts and biodiversity protection in the Philippines. </li>
+               <br>
+        </ul>
+
+    </div>
+
+   
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2> Safari Tour </h2>
+            <div class="image-container2">
+                <img src=" " alt=" ">
+                <p> Take a guided safari tour through the island's wildlife sanctuary. This is the perfect way to see both the African wildlife (like giraffes, zebras, and antelopes) and endemic Palawan species (like the Calamian deer and Palawan bearcat). The safari-style tours allow you to experience the island's natural beauty and learn about its wildlife conservation efforts. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Nature Walks & Hiking </h2>
+            <div class="image-container2">
+                <img src=" " alt=" ">
+                <p> Explore the lush forests and rugged landscapes of the island. A guided nature walk or hike can offer a closer look at the biodiversity of the island and the rich ecosystems it supports. There are also scenic spots for a panoramic view of the island and the surrounding sea. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Beach Relaxation </h2>
+            <div class="image-container2">
+                <img src=" " alt=" ">
+                <p> Calauit Island is also surrounded by beautiful beaches where you can relax, swim, or enjoy a picnic. The calm waters and the serene atmosphere make it a perfect place to unwind after your safari adventure. </p>
+            </div>
+        </ul>
+       
+        <ul>
+            <h2> Bird Watching </h2>
+            <div class="image-container2">
+                <img src=" " alt=" ">
+                <p> Calauit is a great spot for bird watching as it is home to various bird species. You may encounter species like the Philippine eagle or migratory birds that stop by the island. The diverse landscapes of Calauit Island offer an ideal setting for spotting local and visiting birdlife. </p>
+            </div>
+        </ul>
+       
+        <ul>
+            <h2> Educational Tours</h2>
+            <div class="image-container2">
+                <img src=" " alt=" ">
+                <p> Participate in educational tours to learn about the island's history, its role in wildlife conservation, and the ongoing efforts to protect the species found there. You can also learn more about the cultural significance of the African wildlife introductions and the preservation of Palawan’s native species. </p>
+            </div>
+        </ul>
+       
+            <a class="discover-btn" href="destination.html" target="_self">Back</a>
+             
+    </div>
+</div>
+
+</body>
+</html>    
