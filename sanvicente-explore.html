@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> San Vicente Explore </title>
+    <style>
+        
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        video { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        li{
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+        
+        .image-container img {
+            border-radius: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+            
+        }
+
+        .image-container2 {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .image-container2 img {
+            border-radius: 20px;
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            margin-top: 26px; 
+            float: left;
+        }
+
+        .image-container2 p {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .discover-btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .discover-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .image-container img, .image-container2 img {
+                max-width: 100%;
+            }
+
+            .image-container2 {
+                flex-direction: column;
+            }
+
+            .image-container2 img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .discover-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<video src=".mp4" autoplay loop muted></video>   
+
+<div class="hero-section">
+    
+    <div class="content">
+        <h1> biodiversity Exploration  </h1>
+        <ul>
+            <h2> Longest White Sand Beach  </h2>
+            <div class="image-container">
+                <img src="longbeach.jpg" alt="long beach ">
+            </div>
+            
+            <li> San Vicente boasts the renowned Long Beach, a breathtaking 14-kilometer expanse of powdery white sand and turquoise waters. </li>
+               <br>
+            <li> This pristine coastline, flanked by lush coconut trees and rolling hills, is not only the longest white sand beach in the Philippines but also a serene retreat free from the crowds typical of more commercialized destinations. Its unspoiled beauty and tranquil ambiance make it a hidden paradise for those seeking a genuine slice of tropical bliss. </li>
+            <br>
+        </ul>
+
+        <ul>
+            <h2> Emerging Tourism Destination </h2>
+            <div class="image-container">
+                <img src="emerging.jpg" alt="emerginng tourism ">
+            </div>
+            
+            <li> San Vicente is emerging as a rising gem in Palawan, celebrated for its pristine beaches and untouched natural landscapes. Unlike the more developed and bustling destinations of El Nido and Coron, San Vicente remains relatively uncommercialized, offering a peaceful retreat where visitors can immerse themselves in its raw, unspoiled charm. This serene destination is perfect for those seeking tranquil beaches, vibrant marine life, and a genuine escape into nature.</li>
+               <br>
+        </ul>
+
+        <ul>
+            <h2> Diverse Marine Life </h2>
+            <div class="image-container">
+                <img src="marinelife.jpg" alt="marine life ">
+            </div>
+            <li> The waters surrounding San Vicente are a vibrant haven of marine biodiversity, showcasing thriving coral reefs, graceful sea turtles, and colorful schools of tropical fish. These underwater ecosystems provide opportunities for snorkeling and diving, offering visitors an up-close view of Palawan's rich aquatic life. The area’s pristine marine environment reflects its commitment to conservation, making it an ideal spot for nature enthusiasts and marine explorers alike.  </li>
+               <br>
+        </ul>
+
+    </div>
+
+   
+    <div class="content">
+        <h1>Activities</h1>
+        <ul>
+            <h2> Relax at Long Beach </h2>
+            <div class="image-container2">
+                <img src="relax.jpg" alt=" kubo ">
+                <p> Discover the breathtaking Long Beach in San Vicente, Palawan—an unspoiled 14-kilometer expanse of powdery white sand and crystal-clear waters. Renowned as the longest white sand beach in the Philippines, it offers an idyllic setting for sunbathing, leisurely strolls, and soaking in the tranquil coastal atmosphere. With its serene beauty and absence of commercial crowds, Long Beach promises a pristine escape for those seeking relaxation and natural charm. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Island Hopping in Port Barton </h2>
+            <div class="image-container2">
+                <img src="portbarton.jpg" alt="port barton ">
+                <p> Embark on an exciting island-hopping adventure in San Vicente, Palawan, visiting enchanting spots like Exotic Island, Paradise Island, and Starfish Island. Bask in the pristine beaches, crystal-clear waters, and vibrant marine life that define each destination. Snorkel in the vibrant coral gardens of Twin Reef and Fantastic Reef, where colorful fish and stunning underwater landscapes await. For an unforgettable experience, visit designated turtle sites and marvel at sea turtles in their natural habitat as they glide gracefully through the water.  </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Visit Bigaho Waterfalls </h2>
+            <div class="image-container2">
+                <img src="bigahofalls.jpg" alt="bigaho falls ">
+                <p> Embark on a scenic trek through the lush, verdant forests surrounding Port Barton to reach a serene, hidden waterfall. After your journey through the greenery, enjoy a rejuvenating dip in its cool, cascading waters. This tranquil oasis, located just a short boat ride from Port Barton, offers a perfect escape into nature and a refreshing break from the tropical heat. </p>
+            </div>
+        </ul>
+
+        <ul>
+            <h2> Cultural Experiences </h2>
+            <div class="image-container2">
+                <img src="malagnang.jpg" alt="malagnang festival ">
+                <p> Join the vibrant Malagnang Festival, also known as the Mud Festival, held every June in San Vicente. This lively celebration showcases the town's rich cultural heritage through colorful street dancing, traditional music, and engaging cultural activities. Participants often smear mud on themselves, symbolizing unity and connection to the land, adding a unique and festive touch to the event.  </p>
+            </div>
+        </ul>
+
+        <button class="discover-btn">
+            <a href="destination.html" target="_self">Back</a>
+        </button>
+        
+    </div>
+</div>
+
+</body>
+</html>    
