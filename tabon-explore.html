@@ -44,6 +44,12 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
+        .content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
         h1 {
             font-size: 2rem;
             margin-bottom: 20px;
@@ -106,10 +112,12 @@
         
         .discover-btn{
             float: right:
+            margin-right: 10px;
         }
         
         .book-btn{
             float: left:
+            margin-left: 10px;
         }    
 
         .discover-btn, .book-btn:hover {
