@@ -92,10 +92,11 @@
             line-height: 1.6;
         }
 
-        .discover-btn {
+        .discover-btn, .book-btn {
             background-color: white;
             color: #333;
             padding: 10px 20px;
+            display: inline-block;
             font-size: 1rem;
             font-weight: bold;
             border: none;
@@ -103,13 +104,32 @@
             cursor: pointer;
             transition: background 0.3s ease;
             margin-top: 20px;
-            
         }
+        
+        .discover-btn{
+            float: right;
+            margin-right: 10px;
+        }
+        
+        .book-btn{
+            float: left;
+            margin-left: 10px;
+        }    
 
-        .discover-btn:hover {
+        .discover-btn, .book-btn:hover {
             background-color: #f0f0f0;
         }
 
+        .content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .button-container {
+            overflow: hidden;  
+            width: 100%;  
+        }
         a {
             text-decoration: none;
             color: black;
@@ -251,8 +271,15 @@
             </div>
         </ul>
 
-        <a class="discover-btn" href="destination.html" target="_self">Back</a>
+             
+          <div class="button-container">
+             <a class="book-btn" href="https://www.liveaboard.com/diving/philippines/tubbataha?cid=5004&utm_source=bing&utm_medium=cpc&msclkid=ad9e17706adf1f2308d8702b8003711d " target="_blank">Book</a>
+             <a class="discover-btn" href="destination.html" target="_self">Back</a>
+          </div>
         
+
+       
+    
     </div>
 </div>
 
