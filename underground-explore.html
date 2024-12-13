@@ -92,10 +92,11 @@
             line-height: 1.6;
         }
 
-        .discover-btn {
+        .discover-btn, .book-btn {
             background-color: white;
             color: #333;
             padding: 10px 20px;
+            display: inline-block;
             font-size: 1rem;
             font-weight: bold;
             border: none;
@@ -104,10 +105,32 @@
             transition: background 0.3s ease;
             margin-top: 20px;
         }
+        
+        .discover-btn{
+            float: right;
+            margin-right: 10px;
+        }
+        
+        .book-btn{
+            float: left;
+            margin-left: 10px;
+        }    
 
-        .discover-btn:hover {
+        .discover-btn, .book-btn:hover {
             background-color: #f0f0f0;
         }
+
+        .content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .button-container {
+            overflow: hidden;  
+            width: 100%;  
+        }
+
 
         a {
             text-decoration: none;
@@ -253,7 +276,11 @@
             </div>
         </ul>
         
-            <a class="discover-btn" href="destination.html" target="_self">Back</a>
+          
+        <div class="button-container">
+             <a class="book-btn" href="https://www.viator.com/Palawan/d25945-ttd/p-382029P4?m=33953&supag=1232553554735127&supsc=dat-2328834347509487:aud-806379951&supai=77034728715020&supdv=c&supnt=nt:o&suplp=145635&supli=&supti=dat-2328834347509487:aud-806379951&tsem=true&supci=dat-2328834347509487:aud-806379951&supkw=underground%20river%20tour%20package&msclkid=f42796f1659c1d746967f1aa8e54fb18" target="_blank">Book</a>
+             <a class="discover-btn" href="destination.html" target="_self">Back</a>
+        </div>
           
     </div>
 </div>
