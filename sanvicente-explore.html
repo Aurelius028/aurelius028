@@ -91,10 +91,11 @@
             line-height: 1.6;
         }
 
-        .discover-btn {
+         .discover-btn, .book-btn {
             background-color: white;
             color: #333;
             padding: 10px 20px;
+            display: inline-block;
             font-size: 1rem;
             font-weight: bold;
             border: none;
@@ -103,9 +104,30 @@
             transition: background 0.3s ease;
             margin-top: 20px;
         }
+        
+        .discover-btn{
+            float: right;
+            margin-right: 10px;
+        }
+        
+        .book-btn{
+            float: left;
+            margin-left: 10px;
+        }    
 
-        .discover-btn:hover {
+        .discover-btn, .book-btn:hover {
             background-color: #f0f0f0;
+        }
+
+        .content::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .button-container {
+            overflow: hidden;  
+            width: 100%;  
         }
 
         a {
@@ -229,9 +251,12 @@
                 <p> Join the vibrant Malagnang Festival, also known as the Mud Festival, held every June in San Vicente. This lively celebration showcases the town's rich cultural heritage through colorful street dancing, traditional music, and engaging cultural activities. Participants often smear mud on themselves, symbolizing unity and connection to the land, adding a unique and festive touch to the event.  </p>
             </div>
         </ul>
-       
-            <a class="discover-btn" href="destination.html" target="_self">Back</a>
-   
+
+         <div class="button-container">
+             <a class="book-btn" href="https://www.agoda.com/search?area=539834&locale=en-us&ckuid=db3bd805-3bbb-4484-a042-3ab7cd56b778&prid=0&currency=PHP&correlationId=f4095b5b-5bba-4841-86f1-05f464b08ec7&analyticsSessionId=-3735994045375172942&pageTypeId=103&realLanguageId=1&languageId=1&origin=PH&stateCode=00&cid=1914940&tag=7bedeab1-acfb-4871-ba0d-ba33ec78e714&userId=db3bd805-3bbb-4484-a042-3ab7cd56b778&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=18&currencyCode=PHP&htmlLanguage=en-us&cultureInfoName=en-us&machineName=hk-pc-2g-acm-web-user-6cfd755fc5-gvzqs&trafficGroupId=5&trafficSubGroupId=11&aid=82367&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Edge+%28Chromium%29+for+Windows&cdnDomain=agoda.net&checkIn=2024-12-22&checkOut=2024-12-23&rooms=1&adults=1&children=0&priceCur=PHP&los=1&textToSearch=San+Vicente&productType=-1&travellerType=0&familyMode=off&ds=Jpu24ctndu2OcD1z" target="_blank">Book</a>
+             <a class="discover-btn" href="destination.html" target="_self">Back</a>
+        </div>
+        
     </div>
 </div>
 
