@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow: hidden; 
+    }
+
+    .contact-section {
+      position: fixed; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden; 
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      margin: 15px 0; 
+      padding: 15px;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .contact-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .contact-details h3,
+    .contact-details p {
+      margin: 5px 0;
+      color: white;
+    }
+
+    .back-btn {
+      margin-top: 30px; 
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+      color: lightblue;
+    }
+
+    
+    @media (max-width: 768px) {
+      .contact-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .contact-card img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-section">
+
+    
+    <div class="contact-card">
+      <img src="bay.jpg" alt="Profile Picture">
+      <div class="contact-details">
+        <h3>Reil Vince T. Ambay</h3>
+        <p>Email: <a href="mailto:reilvinceambay28@gmail.com">reilvinceambay28@gmail.com</a></p>
+        <p>Contact: 09162156920</p>
+        <p>Instagram: <a href="https://www.instagram.com/bbno_bddy?igsh=czd3MGdyYTU3MWN3" target="_blank">bbno_bddy</a></p>
+        <p>Twitter: <a href="https://x.com/Aurelius_28?t=jOzdCnaryX_4mBFUzZr2Rw&s=09" target="_blank">Aurelius_28</a></p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <img src="Norm.jpg" alt="Profile Picture">
+      <div class="contact-details">
+        <h3>Normelyn G. Alegre</h3>
+        <p>Email: <a href="mailto:normelynalegre80@gmail.com">normelynalegre80@gmail.com</a></p>
+        <p>Contact: 09669052113</p>
+        <p>Facebook: <a href="https://www.facebook.com/normelyn.alegre.9?mibextid=ZbWKwL" target="_blank">Normelyn Alegre</a></p>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <img src="Ash.jpg" alt="Profile Picture">
+      <div class="contact-details">
+        <h3>Ashanti Kaye T. Pedernal</h3>
+        <p>Email: <a href="mailto:ashantitan72@gmail.com">ashantitan72@gmail.com</a></p>
+        <p>Contact: 09691665965</p>
+        <p>Facebook: <a href="https://www.facebook.com/ashang0227?mibextid=ZbWKwL" target="_blank">Ashanti Pedernal</a></p>
+      </div>
+    </div>
+
+    
+    <a class="back-btn" href="destination.html">Back</a>
+
+  </div>
+</body>
+</html>
