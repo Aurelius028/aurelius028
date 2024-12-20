@@ -6,27 +6,24 @@
   <title>Contact Page</title>
   <style>
     
+    /* Base Styling */
     body {
       margin: 0;
       font-family: "Times New Roman", Times, serif;
       background: url('bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      overflow-y: auto; 
+      overflow-y: auto;
     }
 
+    /* Contact Section Styling */
     .contact-section {
-      position: fixed; 
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center; 
       align-items: center;
+      padding: 20px;
+      min-height: 100vh;
       background-color: rgba(0, 0, 0, 0.5);
-      overflow: hidden; 
     }
 
     .contact-card {
@@ -39,7 +36,7 @@
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-radius: 15px;
-      margin: 15px 0; 
+      margin: 15px 0;
       padding: 15px;
       width: 90%;
       max-width: 800px;
@@ -60,7 +57,7 @@
     }
 
     .back-btn {
-      margin-top: 30px; 
+      margin-top: 30px;
       background-color: white;
       color: black;
       padding: 10px 20px;
@@ -69,7 +66,6 @@
       border: none;
       border-radius: 20px;
       cursor: pointer;
-      text-align: center;
       transition: background 0.3s ease;
       text-decoration: none;
     }
@@ -83,24 +79,40 @@
       color: lightblue;
     }
 
-    
+    /* Responsive Styles */
     @media (max-width: 768px) {
       .contact-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px;
       }
 
       .contact-card img {
         margin-bottom: 15px;
+      }
+
+      .contact-section {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-card {
+        width: 100%;
+      }
+
+      .back-btn {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px 0;
       }
     }
   </style>
 </head>
 <body>
   <div class="contact-section">
-
-    
+    <!-- Contact Card 1 -->
     <div class="contact-card">
       <img src="bay.jpg" alt="Profile Picture">
       <div class="contact-details">
@@ -112,6 +124,7 @@
       </div>
     </div>
 
+    <!-- Contact Card 2 -->
     <div class="contact-card">
       <img src="Norm.jpg" alt="Profile Picture">
       <div class="contact-details">
@@ -122,6 +135,7 @@
       </div>
     </div>
 
+    <!-- Contact Card 3 -->
     <div class="contact-card">
       <img src="Ash.jpg" alt="Profile Picture">
       <div class="contact-details">
@@ -132,9 +146,8 @@
       </div>
     </div>
 
-    
+    <!-- Back Button -->
     <a class="back-btn" href="destination.html">Back</a>
-
   </div>
 </body>
 </html>
